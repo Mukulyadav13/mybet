@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Website</title>
+    <link rel="stylesheet" href="home.css">
+    <!-- Add button stylesheet -->
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <!-- Betting Website content -->
+    <!-- Add button here -->   
+
+    <!-- Dropdown Sidebar content -->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="side-bar">
+        <header>
+            <div class="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            
+            <h1>
+                <span style="color: blue;">my</span>
+                <span style="color: red;">bet</span>
+                <span style="color: green;">.com</span>
+            </h1>
+            
+        </header>
+
+        <div class="menu">
+            <div class="item">
+                <a href="profile.html"><i class="fas fa-user"></i>Profile</a>
+            </div>
+            <div class="item">
+                <a href="index.html"><i class="fas fa-desktop"></i>Dashboard</a>
+            </div>
+            <div class="item">
+                <a class="sub-btn"><i class="fas fa-dice"></i>Featured Casino<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Havana</a>
+                    <a href="#" class="sub-item">Bar H Saloon</a>
+                    <a href="#" class="sub-item">Gold Bar</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="#"><i class="fas fa-th"></i>Forms</a>
+            </div>
+            <div class="item">
+                <a class="sub-btn"><i class="fas fa-gamepad"></i>Most Played<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Poker</a>
+                    <a href="#" class="sub-item">Dice</a>
+                    <a href="#" class="sub-item">Roulette</a>
+                </div>
+            </div>
+            <div class="item">
+                <a href="#"><i class="fas fa-info-circle"></i>About</a>
+            </div>
+            <div class="item">
+                <a href="login.html"><i class="fas fa-sign-in-alt"></i>log In</a>
+            </div>
+            <div class="item">
+                <a href="signup.html"><i class="fas fa-user-plus"></i>SignUp</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // jQuery for toggle sub menus
+            $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
+
+            // jQuery for expand and collapse the sidebar
+            $('.menu-btn').click(function(){
+                $('.side-bar').addClass('active');
+                $('.menu-btn').css("visibility", "hidden");
+            });
+
+            // Active cancel button
+            $('.close-btn').click(function(){
+                $('.side-bar').removeClass('active');
+                $('.menu-btn').css("visibility", "visible");
+            });
+        });
+    </script>
+</body>
+</html>
+    
+    </main> 
+        <!-- Main content area -->
+        <div class="content">
+            <h1>Welcome to the world of Games</h1>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="5.webp" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="3.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Original Games section -->
+        <section class="original-games">
+            <h2>Original Games</h2>
+            <div class="game-boxes">
+                <!-- Row 1 -->
+                <div class="row">
+                    <div class="box">
+                        <img src="g5.png" alt="Game 1">
+                        <button class="play-button">Play Now</button>
+                        <div class="game-name">Animal Slot</div>
+                    </div>
+                    <div class="box">
+                        <img src="g6.png" alt="Game 1">
+                        <button class="play-button">Play Now</button>
+                        <div class="game-name">AmericanRoulite</div>
+                    </div>
+                    <div class="box">
+                        <img src="g7.png" alt="Game 1">
+                        <button class="play-button">Play Now</button>
+                        <div class="game-name">Dice</div>
+                    </div>
+                    <div class="box">
+                        <img src="g8.png" alt="Game 1">
+                        <button class="play-button">Play Now</button>
+                        <div class="game-name">Dice 3D</div>
+                    </div>
+                    <div class="box">
+                        <img src="g9.png" alt="Game 1">
+                        <button class="play-button">Play Now</button>
+                        <div class="game-name">European Roulette</div>
+                    </div>
+                    <div class="box">
+                        <img src="g10.png" alt="Game 1">
+                        <button class="play-button">Play Now</button>
+                        <div class="game-name">Fruit Slots</div>
+                    </div>
+                    <div class="box">
+                        <img src="g11.png" alt="Game 1">
+                        <button class="play-button">Play Now</button>
+                        <div class="game-name">Mult-Roulette</div>
+                    </div>
+                    <div class="box">
+                        <img src="g12.png" alt="Game 1">
+                        <button class="play-button">Play Now</button>
+                        <div class="game-name">Multi-Blackjack</div>
+                    </div>
+                    <div class="box">
+                        <img src="g13.png" alt="Game 1">
+                        <button class="play-button">Play Now</button>
+                        <div class="game-name">Lucky Wheel</div>
+                    </div>
+                    <div class="box">
+                        <img src="g14.png" alt="Game 1">
+                        <button class="play-button">Play Now</button>
+                        <div class="game-name">Kino</div>
+                    </div>
+                    <div class="box">
+                        <img src="g15.png" alt="Game 1">
+                        <button class="play-button">Play Now</button>
+                        <div class="game-name">Sic Bo</div>
+                    </div>
+                    <div class="box">
+                        <img src="g16.png" alt="Game 1">
+                        <button class="play-button">Play Now</button>
+                        <div class="game-name">Slot 3D</div>
+                    </div>
+                                                                                
+                </div>
+                <!-- Row 2 -->
+                <!-- Add more rows  -->
+            </div>
+        <!-- Featured Games section -->
+        <section class="featured-games">
+            <h2>Featured Games</h2>
+            <div class="game-boxes">
+                <!-- Row 1 -->
+                <div class="box">
+                    <img src="g1.png" alt="Game 1">
+                    <button class="play-button">Play Now</button>
+                    <div class="game-name">Casion Hold'em</div>
+                </div>
+                <div class="box">
+                    <img src="g2.png" alt="Game 1">
+                    <button class="play-button">Play Now</button>
+                    <div class="game-name">Caribin Poker</div>
+                </div>
+                <div class="box">
+                    <img src="g3.png" alt="Game 1">
+                    <button class="play-button">Play Now</button>
+                    <div class="game-name">Blackjack</div>
+                </div>
+                <div class="box">
+                    <img src="g4.png" alt="Game 1">
+                    <button class="play-button">Play Now</button>
+                    <div class="game-name">Baccarat</div>
+                </div>
+                
+                <!-- Row 2 -->
+                <!-- Add more game boxes here -->
+            </div>
+            <section class="our-partners">
+                <!-- Featured Games heading -->
+                <h2>Payment-Partners</h2>
+                
+                <!-- Game boxes container -->
+                <div class="game-boxes">
+                    <!-- Partner boxes for Paytm, PhonePe, and BharatPe logos -->
+                    <div class="partner-box">
+                        <img src="social.png" alt="Google Logo">
+                    </div>
+                    <div class="partner-box">
+                        <img src="paytm.png" alt="Paytm Logo">
+                    </div>
+                    <div class="partner-box">
+                        <img src="paypal.png" alt="Pay Pal Logo">
+                    </div>
+                    <div class="partner-box">
+                        <img src="visa.png" alt="PhonePe Logo">
+                    </div>
+                    <div class="partner-box">
+                        <img src="apple-pay.png" alt="BharatPe Logo">
+                    </div>
+                </div>
+    
+                <!-- New image -->
+                <div class="full-image">
+                    <img src="a5.png" alt="New Image">
+                </div>
+            </section>
+            <div>
+                <section class="partner-casinos">
+                    <h2>Partner Casinos</h2>
+                    <div class="casino-boxes">
+                        <div class="casino-box">
+                            <img src="cc1.jpeg" alt="Casino 1">
+                        </div>
+                        <div class="casino-box">
+                            <img src="cc2.jpeg" alt="Casino 2">
+                        </div>
+                        <div class="casino-box">
+                            <img src="cc3.jpeg" alt="Casino 3">
+                        </div>
+                        <div class="casino-box">
+                            <img src="cc4.jpeg" alt="Casino 4">
+                    </div>
+            </section>
+            <div>
+                <section class="roulette-section">
+                            <h2>Roulette</h2>
+                            <div class="roulette-boxes">
+                                <div class="casino-box">
+                                    <img src="ru1.png" alt="Roulette Game">
+                                </div>
+                                <div class="casino-box">
+                                    <img src="ru2.png" alt="Roulette Game">
+                                </div>
+                                <div class="casino-box">
+                                    <img src="ru3.png" alt="Roulette Game">
+                                </div>
+                                <div class="casino-box">
+                                    <img src="ru4.png" alt="Roulette Game">
+                                </div>
+                                <div class="casino-box">
+                                    <img src="ru5.png" alt="Roulette Game">
+                                </div>
+                                <div class="casino-box">
+                                    <img src="ru6.png" alt="Roulette Game">
+                                </div>
+                                <!-- Add more roulette game boxes here -->
+                            </div>
+                        </section>
+                    </section>
+                    <div>
+                        <section class="poker-section">
+                                    <h2>poker</h2>
+                                    <div class="poker-boxes">
+                                        <div class="casino-box">
+                                            <img src="pk1.png" alt="poker Game">
+                                        </div>
+                                        <div class="casino-box">
+                                            <img src="pk2.png" alt="poker Game">
+                                        </div>
+                                        <div class="casino-box">
+                                            <img src="pk3.png" alt="poker Game">
+                                        </div>
+                                        <div class="casino-box">
+                                            <img src="pk4.png" alt="poker Game">
+                                        </div>
+                                        
+                                        <!-- Add more poker game boxes here -->
+                                    </div>
+                                </section>
+                                <div>
+                                    <section class="our-partners">
+                                        <!-- Featured Games heading -->
+                                        <h2>Social Media Partners</h2>
+                                        
+                                        <!-- Game boxes container -->
+                                        <div class="game-boxes">
+                                            <!-- Partner boxes for Paytm, PhonePe, and BharatPe logos -->
+                                            <div class="partner-box">
+                                                <img src="instagram.png" alt="Google Logo">
+                                            </div>
+                                            <div class="partner-box">
+                                                <img src="facebook.png" alt="Paytm Logo">
+                                            </div>
+                                            <div class="partner-box">
+                                                <img src="twitter.png" alt="Pay Pal Logo">
+                                            
+                                        </div>
+                                </section>
+                        
+                        
+
+                        
+    </main>
+
+    <script src="home.js"></script> 
+</body>
+</html>
